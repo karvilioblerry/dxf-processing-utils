@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>net.kabeja.backup</groupId>
+    <artifactId>dxf.utility</artifactId>
+    <version>1.0</version>
+    <packaging>jar</packaging>
+
+    <name>DXF utility</name>
+    <description>The maven library to export and import utility classes of .dxf files</description>
+    <url>http://maven.apache.org</url>
+
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <scm>
+        <url>http://kabeja.sourceforge.net</url>
+    </scm>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <distributionManagement>
+        <repository>
+            <id>nexus-releases</id>
+            <url>http://0.0.0.0:8081/repository/dxf-utility/</url>
+        </repository>
+    </distributionManagement>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/net.sourceforge/kabeja -->
+        <!--Repository is not supported and was removed, used code as copy paste.
+        <dependency>
+            <groupId>net.sourceforge</groupId>
+            <artifactId>kabeja</artifactId>
+            <version>0.4</version>
+        </dependency>-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.16</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.25</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.7.25</version>
+        </dependency>
+    </dependencies>
+</project>
